@@ -1,0 +1,57 @@
+*{
+	margin:0; padding:0; 
+	font-family: 'Martel', serif;
+	line-height: 1.5em;
+	color:#666;
+}
+
+
+#box11{
+	height:100%;
+	background:url(images/forest.jpg);
+}
+#box21{
+	height:70%;
+	background:url(images/pine.jpg);
+}
+#box31{
+	height:50%;
+	background:url(images/seed.jpg);
+}
+#box41{
+	height:100%;
+	background:url(images/spider.jpg);
+}
+
+#box11, #box21,#box31,#box41{
+	background-attachment:fixed;  background-size:100% 100%;
+	position:relative;
+}
+
+section{
+	text-align:center; padding:50px 80px;
+}
+
+#box14{
+	background-color:#CCFFFF;
+}
+#box24{
+	background-color:#9CC;
+}
+#box34{
+	background-color:#0C9;
+}
+#box44{
+	background-color:#FFFFCC;
+}
+
+#box12, #box22,#box32,#box42{
+	width:100%;
+	position:absolute; top:50%; 
+	text-align:center; font-size:28px;
+	letter-spacing:8px; text-transform:uppercase;
+	
+}
+span{	
+	color:red;
+}
