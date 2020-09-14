@@ -1,0 +1,177 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+header{
+    background-color: powderblue;
+    display: flex;
+    align-items: center;
+}
+header ul{
+    display: flex;
+}
+header li{
+    padding: 10px;
+    margin: 2px;
+}
+
+#box1 a{
+    color:blue;
+ }
+#box1 li:first-child{
+    background-color: white;
+    border-radius:50%;
+}
+#inside_box1 a{
+    color:rgb(150, 12, 131);
+    font-weight: bold;
+}
+ #box2{
+    margin: auto;
+    font-size: 50px;
+}
+#box2 a{
+   color:rgb(150, 12, 131);
+}
+i{
+    color:blue;
+}
+
+#box1 a:hover{
+    color:red;
+}
+#box3 i:hover{
+    color:plum;
+    text-shadow: 1px 1px black;
+    font-size: 2em;
+    transition-delay: 1s;
+    transition-duration: 1s;
+}
+
+
+#main{
+    display: flex;
+}
+article{
+    padding: 8px;
+}
+aside{
+    flex:0 0 20vw;
+    background-color: wheat;
+    padding: 8px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside img{
+    box-shadow: -5px 5px 1px rgb(139, 134, 134), -6px 6px red;
+    width:100%; height: 250px;
+    object-fit: cover;
+}
+aside a{
+    display:block;
+    color:blue;
+    padding: 12px;
+    border-bottom: 1px solid grey;
+}
+
+#box6{
+    display: flex;
+    justify-content: space-between;
+}
+#box7 img{
+    width: 100%; height: 200px;
+    object-fit: cover;
+}
+#img{
+    border:2px solid #eee;
+    padding: 10px;
+    flex-basis: 32%;
+    display:flex;
+    flex-direction: column;
+}
+#box10{
+    align-self: flex-end;
+    margin-top:auto;
+}
+#box10 a{
+    background-color: gray;
+    color:white;
+    display: block;
+    padding:8px 13px;
+}
+#box10 a:hover{
+    background-color: rgb(150, 12, 131);
+    color:gold;
+   
+}
+h2{
+    margin-bottom: 5px;
+}
+h3{
+    margin-bottom: 5px;
+}
+
+
+footer{
+    background-color:powderblue ;
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    0%{
+        color:red;
+        transform: rotate(15deg) scale(1.1);
+    }
+    40%{
+        color:blue;
+        transform: rotate(-15deg) scale(1);
+    }
+    70%{
+        color:green;
+        transform: rotate(-15deg) scale(1.1);
+    }
+    100%{
+        color:black;
+        transform: rotate(15deg) scale(1);
+    }
+}
+
+
+@media screen and (max-width:600px){
+    header{
+        flex-direction: column;
+    }
+    #box2{
+        font-size: 45px;
+        order:-1;
+    }
+    #main{
+        flex-direction: column;
+    }
+    aside{
+        order:1;
+    }
+    #box6{
+        flex-direction: column;
+    }
+    #img{
+        margin-top: 3px;
+    }
+    #box10{
+        align-self: center;
+    }
+}
