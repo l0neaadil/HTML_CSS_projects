@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Survey_Form</title>
+		<link rel='stylesheet' href='style.css'>
+	</head>
+
+	<body>
+		<main>
+			<header><h1 id='title'>freeCodeCamp Survey Form</h1></header>
+			
+			<div id='descript'><p id='description'>This survey aims to get general details about a common programmer.</p></div>
+			
+			<form id='survey-form' enctype='multipart/form-data'>
+
+				<label for="name" id='name-label'>Name:</label> 
+				<input type='text' placeholder=' first name' id='name' required>
+				<input type='text' placeholder=' last name' id='last-name'> 
+				<br> 
+
+				Gender: <br>
+					<input type='radio' name='gender' value='male' id="male"> <label for="male">Male</label>
+					<input type='radio' name='gender' value='female' id="female"> <label for="female">Female</label>
+					<input type='radio' name='gender' value='other' id="other"> <label for="other">Other</label>
+					<br><br>
+
+				<div id="age-email">
+					<div id="box3">
+						<label for="number" id="number-label">Age: </label>
+						<input type='number' placeholder='  age' min="6" max='130' id='number' required>
+					</div>
+
+					<div id="box2">
+						<label for="email" id='email-label'>Email:</label>
+						<input type="email" placeholder="  abc@example.com" id='email' required>
+					</div>
+			    </div>
+				<br>
+				
+				Skills:
+				<br><input type="checkbox" name="unknown" value='a' id="choice1"> <label for="choice1">C</label>
+				<br><input type="checkbox" name="unknown" value='b' id="choice2"> <label for="choice2">PYTHON</label>
+				<br><input type="checkbox" name="unknown" value='c' id="choice3"> <label for="choice3">JAVA</label>
+				<br><input type="checkbox" name="unknown" value='d' id="choice4"> <label for="choice4">PHP</label>
+				<br><input type="checkbox" name="unknown" value='e' id='choice5' checked> <label for="choice5">CSE</label>
+				<br><br>
+
+				<label for="file">Certificate(if any):</label>
+				<input type='file' name='upfile'>
+				<br><br>
+
+				<label for="dropdown">Choose your favourite site:</label>
+				<br>
+				<div id="dropdown">
+					<select>
+						<optgroup label='Social Media'>
+						<option value='fb'>Twitter</option>
+						<option value='in'>Instagram</option>
+						<option value='tw'>Facebook</option>
+						</optgroup>
+					</select>
+					<br>
+					<select>
+						<optgroup label='Learning Site'>
+						<option value='fc'>freeCodeCamp</option>
+						<option value='ud'>Udemy</option>
+						<option value='yt'>Youtube</option>
+						</optgroup>
+					</select>
+					<br>
+					<select>
+						<optgroup label='Job Site'>
+						<option value='gh'>Github</option>
+						<option value='ld'>Linkedin</option>
+						<option value='all'>All</option>
+						</optgroup>
+					</select>
+			    </div>
+				<br><br>
+
+				<div id="message">
+					<label for="textarea">Your Message: </label>
+					<textarea name='story' cols="40" rows="5" id="textarea"> </textarea> 
+			    </div>
+				<br>
+
+				<div id="button">
+					<button type='submit' title='click to submit' id='submit'>send</button>
+					<button type='reset' title='click to refill' id='reset'>reset</button>
+			    </div>
+			</form>
+	    </main>
+	</body>
+</html>
