@@ -1,0 +1,142 @@
+*{
+    margin:0; padding:0; box-sizing: border-box;
+}
+
+main{
+    background:url(images/form_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    color: rgb(238, 94, 94);
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+#descript{
+    background:linear-gradient(to left, rgba(0,0,0,0.3),rgba(245,245,245,0.3));
+    text-align: center;
+    color:paleturquoise;
+    font-size: 22px; 
+    padding: 5px 10px;
+    border-radius:5px;
+}
+
+form{
+    padding: 20px;
+    font-size: 18px;
+    width: 70%;
+    background: rgba(231, 152, 198, 0.7);
+}
+
+input{
+    padding: 3px 5px;
+}
+input[type='text']{
+    width:80%;
+    display: block;
+    margin:0px auto;
+}
+input[type="checkbox"]{
+    margin-left:40px ;
+}
+input:focus{
+    outline:none;
+    border:2px solid gold;
+    color:skyblue; 
+    font-weight: 600;
+}
+input:invalid{
+    color:red;
+}
+
+#last-name{
+    margin-top: 3px;
+}
+
+#male{
+    margin-left:40px ;
+}
+
+#age-email{
+    display: flex;
+    justify-content: space-around;
+}
+
+#dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+select{
+    width: 40%;
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+textarea{
+    resize:none;
+}
+
+#button{
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    margin-right:5px; padding: 5px;
+    outline: none; border: 2px solid green;
+    border-radius: 30%;
+    width:15%;
+    background-color: rgba(32, 191, 212, 0.6);
+}
+button:hover{
+background-color: silver;
+}
+
+
+@media screen and (max-width:500px){
+
+    h1{
+        font-size: 28px;
+    }
+    #descript{
+        font-size: 20px;
+    }
+    
+    form{
+        width:90%;
+        border-top:2px solid black;
+    }
+    textarea{
+        width:90%;
+    }
+    
+}
+
+
+@media screen and (max-width:375px){
+    
+    form{
+        width:94%;
+    }
+    #female{
+        margin-left: 2px;
+    }
+    #other{
+        margin-left: 2px;
+    }
+    select{
+        width: 60%;
+    }
+    button{
+        width: 22%;
+    }
+    
+}
