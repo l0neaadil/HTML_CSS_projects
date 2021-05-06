@@ -4,7 +4,7 @@ This project is made with HTML & CSS.
 https://l0neaadil.github.io/HTML_CSS_projects/03_Kotheir
 
 #### Loading...
-The work on the project is still going on. It may take time to load the page.
+The work on the project is still going on. First time the site may not load properly.
 
 
 <table>
